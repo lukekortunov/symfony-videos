@@ -1,4 +1,4 @@
-<?php include('includes/_header.php'); ?>
+<?php include( 'includes/_header.php' ); ?>
 
 <h2>Videos / My liked videos</h2>
 
@@ -42,7 +42,7 @@
     function delete_video(e,video_id)
     {
         e.preventDefault();
-        if(confirm('Are you sure?')) 
+        if(confirm('Are you sure?'))
         {
             console.log(id);
             // delete video from vimeo
@@ -51,4 +51,4 @@
     }
 </script>
 
-<?php include('includes/_footer.php'); ?>
+<?php include( 'includes/_footer.php' ); ?>

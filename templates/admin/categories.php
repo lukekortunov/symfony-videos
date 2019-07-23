@@ -1,4 +1,4 @@
-<?php include('includes/_header.php'); ?>
+<?php include( 'includes/_header.php' ); ?>
 
 <style>
     .fa-ul>li {
@@ -10,10 +10,10 @@
 
 <ul class="fa-ul text-left">
     <li><i class="fa-li fa fa-arrow-right"></i>Funny <a href="edit_category.php">edit</a> <a onclick="return confirm('Are you sure?');"
-                href="#">delete</a></li>
+                                                                                             href="#">delete</a></li>
     <ul class="fa-ul text-left">
         <li><i class="fa-li fa fa-arrow-right"></i>For kids <a href="edit_category.php">edit</a> <a onclick="return confirm('Are you sure?');"
-                href="#">delete</a></li>
+                                                                                                    href="#">delete</a></li>
         <li><i class="fa-li fa fa-arrow-right"></i>For adults <a href="#">edit</a> <a onclick="return confirm('Are you sure?');"
                 href="#">delete</a></li>
         <ul class="fa-ul text-left">
@@ -67,4 +67,4 @@
 </form>
 
 
-<?php include('includes/_footer.php'); ?>
+<?php include( 'includes/_footer.php' ); ?>

@@ -1,4 +1,4 @@
-<?php include('includes/_header.php'); ?>
+<?php include( 'includes/_header.php' ); ?>
 
             <h2>Upload a video</h2>
 
@@ -7,9 +7,9 @@
                     <div class="custom-file">
                             <input type="file" name="file_data" class="custom-file-input" id="customFile" onchange="console.log(this)">
                             <label class="custom-file-label" for="customFile">Choose file</label>
-                    </div> 
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
 
-<?php include('includes/_footer.php'); ?>
+<?php include( 'includes/_footer.php' ); ?>

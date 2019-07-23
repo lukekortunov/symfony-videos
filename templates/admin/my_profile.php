@@ -1,4 +1,4 @@
-<?php include('includes/_header.php'); ?>
+<?php include( 'includes/_header.php' ); ?>
 
 <h2>My profile <small><a onclick="return confirm('Are you sure?');" href="#">delete account</a></small></h2>
 <p class="text-left">My plan - Pro. <a onclick="return confirm('Are you sure? This can not be undone. Remember also to cancel payment in your PayPal account.');"
@@ -51,4 +51,4 @@
     <button type="submit" class="btn btn-primary">Save</button>
 </form>
 
-<?php include('includes/_footer.php'); ?>
+<?php include( 'includes/_footer.php' ); ?>

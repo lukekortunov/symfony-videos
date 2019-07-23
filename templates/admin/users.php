@@ -1,4 +1,4 @@
-<?php include('includes/_header.php'); ?>
+<?php include( 'includes/_header.php' ); ?>
  <h2>Users</h2>
 
     <div class="table-responsive">
@@ -26,4 +26,4 @@
         </table>
     </div>
 
-<?php include('includes/_footer.php'); ?>
+<?php include( 'includes/_footer.php' ); ?>
