@@ -31,6 +31,15 @@ class AdminController extends AbstractController
     
     
     /**
+     * @Route("/edit-category", name="admin_category_edit")
+     */
+    public function editCategory()
+    {
+        return $this->render( 'admin/edit_category.html.twig' );
+    }
+    
+    
+    /**
      * @Route("/videos", name="admin_videos")
      */
     public function videos()

@@ -16,15 +16,17 @@
             </tr>
             </thead>
             <tbody>
-            <?php foreach(range(1,10) as $v): ?>
-            <tr>
-                <td><?=$v?></td>
-                <td>Adam</td>
-                <td>Smith</td>
-                <td>adam@smith.com</td>
-                <td><a href="#" onclick="return confirm('Are you sure?');"><i class="fas fa-trash"></i></a></td>
-            </tr>
-            <?php endforeach; ?>
+
+            {% for user in 1..10 %}
+                <tr>
+                    <td>{{ user }}</td>
+                    <td>Adam</td>
+                    <td>Smith</td>
+                    <td>adam@smith.com</td>
+                    <td><a href="#" onclick="return confirm('Are you sure?');"><i class="fas fa-trash"></i></a></td>
+                </tr>
+            {% endfor %}
+
             </tbody>
         </table>
     </div>

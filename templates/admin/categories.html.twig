@@ -3,6 +3,7 @@
 
 
 {% block stylesheets %}
+    {{ parent() }}
     <style>
         .fa-ul > li {
             margin-top: 15px;
@@ -19,22 +20,22 @@
 
         <li>
             <i class="fa-li fa fa-arrow-right"></i>Funny
-            <a href="edit_category.php">edit</a>
+            <a href="{{ path('admin_category_edit') }}">edit</a>
             <a onclick="return confirm('Are you sure?');" href="#">delete</a>
             <ul class="fa-ul text-left">
                 <li>
                     <i class="fa-li fa fa-arrow-right"></i>For kids
-                    <a href="edit_category.php">edit</a>
+                    <a href="{{ path('admin_category_edit') }}">edit</a>
                     <a onclick="return confirm('Are you sure?');" href="#">delete</a>
                 </li>
                 <li>
                     <i class="fa-li fa fa-arrow-right"></i>For adults
-                    <a href="#">edit</a>
+                    <a href="{{ path('admin_category_edit') }}">edit</a>
                     <a onclick="return confirm('Are you sure?');" href="#">delete</a>
                     <ul class="fa-ul text-left">
                         <li>
                             <i class="fa-li fa fa-arrow-right"></i>Strange
-                            <a href="#">edit</a><a onclick="return confirm('Are you sure?');" href="#">delete</a>
+                            <a href="{{ path('admin_category_edit') }}">edit</a><a onclick="return confirm('Are you sure?');" href="#">delete</a>
                         </li>
                     </ul>
                 </li>
@@ -43,31 +44,31 @@
 
         <li>
             <i class="fa-li fa fa-arrow-right"></i>Scary
-            <a href="#">edit</a>
+            <a href="{{ path('admin_category_edit') }}">edit</a>
             <a onclick="return confirm('Are you sure?');" href="#">delete</a>
         </li>
 
         <li>
             <i class="fa-li fa fa-arrow-right"></i>Unbelievable
-            <a href="#">edit</a>
+            <a href="{{ path('admin_category_edit') }}">edit</a>
             <a onclick="return confirm('Are you sure?');" href="#">delete</a>
         </li>
 
         <li>
             <i class="fa-li fa fa-arrow-right"></i>Inspirational
-            <a href="#">edit</a>
+            <a href="{{ path('admin_category_edit') }}">edit</a>
             <a onclick="return confirm('Are you sure?');" href="#">delete</a>
         </li>
 
         <li>
             <i class="fa-li fa fa-arrow-right"></i>Motivating
-            <a href="#">edit</a>
+            <a href="{{ path('admin_category_edit') }}">edit</a>
             <a onclick="return confirm('Are you sure?');" href="#">delete</a>
         </li>
 
         <li>
             <i class="fa-li fa fa-arrow-right"></i>Surprising
-            <a href="#">edit</a>
+            <a href="{{ path('admin_category_edit') }}">edit</a>
             <a onclick="return confirm('Are you sure?');" href="#">delete</a>
         </li>
 
@@ -76,12 +77,12 @@
             <ul class="fa-ul text-left">
                 <li>
                     <i class="fa-li fa fa-arrow-right"></i>Strange
-                    <a href="#">edit</a>
+                    <a href="{{ path('admin_category_edit') }}">edit</a>
                     <a onclick="return confirm('Are you sure?');" href="#">delete</a>
                     <ul class="fa-ul text-left">
                         <li>
                             <i class="fa-li fa fa-arrow-right"></i>Boring
-                            <a href="#">edit</a>
+                            <a href="{{ path('admin_category_edit') }}">edit</a>
                             <a onclick="return confirm('Are you sure?');" href="#">delete</a>
                         </li>
                     </ul>
@@ -91,7 +92,7 @@
 
         <li>
             <i class="fa-li fa fa-arrow-right"></i>Relaxing
-            <a href="#">edit</a>
+            <a href="{{ path('admin_category_edit') }}">edit</a>
             <a onclick="return confirm('Are you sure?');" href="#">delete</a>
         </li>
 

@@ -16,9 +16,10 @@
             </tr>
             </thead>
             <tbody>
-            <?php foreach(range(1,10) as $v): ?>
+
+            {% for video in 1..10 %}
             <tr>
-                <td><?=$v?></td>
+                <td>{{ video }}</td>
                 <td>Video name</td>
                 <td><a target="_blank" href="http://vimeo.com">go to video</a></td>
                 <td>
@@ -35,7 +36,8 @@
                 </td>
                 <td><a href="#" onclick="delete_video(event,2);"><i class="fas fa-trash"></i></a></td>
             </tr>
-            <?php endforeach; ?>
+            {% endfor %}
+
             </tbody>
         </table>
     </div>
@@ -45,6 +47,8 @@
 
 
 {% block custom_javascript %}
+
+    {{ parent() }}
 
     <script>
         function delete_video(e, video_id) {
