@@ -1,0 +1,36 @@
+{
+  "entrypoints": {
+    "css/styles": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/css/styles.css"
+      ]
+    },
+    "css/dashboard": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/css/dashboard.css"
+      ]
+    },
+    "css/login": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/css/login.css"
+      ]
+    },
+    "css/fontawesome": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/css/fontawesome.css"
+      ]
+    }
+  }
+}

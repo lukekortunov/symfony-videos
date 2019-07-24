@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
+        {{ encore_entry_link_tags('css/styles') }}
+        {{ encore_entry_link_tags('css/fontawesome') }}
 
         <style>
             .form-control {
@@ -16,7 +17,7 @@
             }
         </style>
 
-        <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.min.css') }}">
+
 
         {% block stylesheets %}{% endblock %}
 
@@ -95,9 +96,9 @@
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="{{ asset('assets/js/jquery.js') }}"></script>
-        <script src="{{ asset('assets/js/popper.js') }}"></script>
-        <script src="{{ asset('assets/js/bootstrap.js') }}"></script>
+        <script src="{{ asset('build/js/jquery.js') }}"></script>
+        <script src="{{ asset('build/js/popper.js') }}"></script>
+        <script src="{{ asset('build/js/bootstrap.js') }}"></script>
 
         <script>
             $(function () {
