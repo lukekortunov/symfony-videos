@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa1a7751-eb17-4d4e-a4ca-be932ba949c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front/_main_categories.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/symfony-cinema.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony-cinema.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FrontController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,37 +58,53 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="das://195624a2-deae-4cee-b3ac-545a895032e0/schema/main/table/categories">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="c3bf4fea-d9a8-48e8-a769-f18af113c829">
-              <filtering>
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://195624a2-deae-4cee-b3ac-545a895032e0/schema/main/table/videos">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="c3bf4fea-d9a8-48e8-a769-f18af113c829">
-              <filtering>
-                <filter text="" />
-              </filtering>
+        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php">
+        <entry file="file://$PROJECT_DIR$/src/Controller/FrontController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+            <state relative-caret-position="476">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
               <folding>
-                <element signature="e#36#54#0#PHP" expanded="true" />
-                <element signature="e#416#684#0#PHP" />
-                <element signature="e#1125#1448#0#PHP" />
-                <element signature="e#1458#2115#0#PHP" />
+                <element signature="e#34#58#0#PHP" expanded="true" />
+                <element signature="e#308#463#0#PHP" />
+                <element signature="e#353#456#0#PHP" />
+                <element signature="e#392#455#0#PHP" />
+                <element signature="e#605#632#1#PHP" expanded="true" />
+                <element signature="e#842#907#0#PHP" />
+                <element signature="e#917#1024#0#PHP" />
+                <element signature="e#827#858#1#PHP" expanded="true" />
+                <element signature="e#845#930#0#PHP" />
+                <element signature="e#971#1098#0#PHP" />
+                <element signature="e#1077#1130#0#PHP" />
+                <element signature="e#1171#1283#0#PHP" />
+                <element signature="e#1262#1317#0#PHP" />
+                <element signature="e#1358#1472#0#PHP" />
+                <element signature="e#1451#1500#0#PHP" />
+                <element signature="e#1541#1649#0#PHP" />
+                <element signature="e#1628#1681#0#PHP" />
+                <element signature="e#1722#1836#0#PHP" />
+                <element signature="e#1851#2176#0#PHP" />
+                <element signature="e#2022#2097#0#PHP" />
+                <element signature="e#2072#2096#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/front/_main_categories.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#234#244#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,7 +148,6 @@
         <option value="$PROJECT_DIR$/templates/admin/includes/_header.php" />
         <option value="$PROJECT_DIR$/templates/admin/upload_video.html.twig" />
         <option value="$PROJECT_DIR$/templates/admin/my_profile.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/FrontController.php" />
         <option value="$PROJECT_DIR$/templates/front/payment.html.twig" />
         <option value="$PROJECT_DIR$/templates/admin/categories.html.twig" />
         <option value="$PROJECT_DIR$/templates/admin/edit_category.html.twig" />
@@ -143,7 +159,6 @@
         <option value="$PROJECT_DIR$/templates/admin/videos.html.twig" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/templates/front/videolist.html.twig" />
         <option value="$PROJECT_DIR$/templates/front/video_details.html.twig" />
         <option value="$PROJECT_DIR$/templates/front/login.html.twig" />
@@ -152,6 +167,9 @@
         <option value="$PROJECT_DIR$/src/Entity/Category.php" />
         <option value="$PROJECT_DIR$/src/Entity/Video.php" />
         <option value="$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/front/_main_categories.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/FrontController.php" />
       </list>
     </option>
   </component>
@@ -222,6 +240,14 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easy-log-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
@@ -251,13 +277,13 @@
             <path>
               <item name="symfony-cinema" type="b2602c69:ProjectViewProjectNode" />
               <item name="symfony-cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DataFixtures" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="symfony-cinema" type="b2602c69:ProjectViewProjectNode" />
               <item name="symfony-cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="var" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -435,10 +461,10 @@
     <MESSAGE value="Lesson #120" />
     <MESSAGE value="Lesson #121" />
     <MESSAGE value="Lesson #122" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson #122" />
+    <MESSAGE value="Lesson #126 - Own fixtures implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson #126 - Own fixtures implementation" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/front/includes/_menu.html.twig" />
     <entry file="file://$PROJECT_DIR$/templates/front/includes/_footer_links.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -449,23 +475,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/includes/_header.php" />
     <entry file="file://$PROJECT_DIR$/templates/admin/includes/_footer.php" />
-    <entry file="file://$PROJECT_DIR$/src/Controller/FrontController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-295">
-          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding>
-            <element signature="e#34#99#0#PHP" expanded="true" />
-            <element signature="e#605#632#1#PHP" expanded="true" />
-            <element signature="e#791#822#1#PHP" expanded="true" />
-            <element signature="e#1012#1044#1#PHP" expanded="true" />
-            <element signature="e#1205#1230#1#PHP" expanded="true" />
-            <element signature="e#1393#1419#1#PHP" expanded="true" />
-            <element signature="e#1573#1596#1#PHP" expanded="true" />
-            <element signature="e#1748#1773#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -714,13 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="100" column="68" lean-forward="true" selection-start-line="100" selection-start-column="68" selection-end-line="100" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-920">
@@ -841,6 +843,53 @@
             <element signature="e#416#684#0#PHP" />
             <element signature="e#1125#1448#0#PHP" />
             <element signature="e#1458#2115#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/front/_main_categories.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#234#244#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="e#34#58#0#PHP" expanded="true" />
+            <element signature="e#308#463#0#PHP" />
+            <element signature="e#353#456#0#PHP" />
+            <element signature="e#392#455#0#PHP" />
+            <element signature="e#605#632#1#PHP" expanded="true" />
+            <element signature="e#842#907#0#PHP" />
+            <element signature="e#917#1024#0#PHP" />
+            <element signature="e#827#858#1#PHP" expanded="true" />
+            <element signature="e#845#930#0#PHP" />
+            <element signature="e#971#1098#0#PHP" />
+            <element signature="e#1077#1130#0#PHP" />
+            <element signature="e#1171#1283#0#PHP" />
+            <element signature="e#1262#1317#0#PHP" />
+            <element signature="e#1358#1472#0#PHP" />
+            <element signature="e#1451#1500#0#PHP" />
+            <element signature="e#1541#1649#0#PHP" />
+            <element signature="e#1628#1681#0#PHP" />
+            <element signature="e#1722#1836#0#PHP" />
+            <element signature="e#1851#2176#0#PHP" />
+            <element signature="e#2022#2097#0#PHP" />
+            <element signature="e#2072#2096#0#PHP" />
           </folding>
         </state>
       </provider>

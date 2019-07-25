@@ -1,0 +1,7 @@
+{% dump( categories ) %}
+
+{% for category in categories %}
+    <a class="p-2 text-dark" href="{{ path('video_list', {'slug':category.name|lower, 'id':category.id}) }}">
+        {{ category.name }}
+    </a>
+{% endfor %}
