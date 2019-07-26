@@ -85,7 +85,6 @@ class CategoryFixtures extends Fixture
             
             /** @var Category $parent */
             $parent = $this->faker->randomElement( $categories );
-            // $string = (string) uniqid();
             $string = $cat;
             
             $category = new Category;
