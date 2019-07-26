@@ -29,6 +29,33 @@ abstract class AbstractCategoryTree
     
     abstract public function getCategoryList( array $categories );
     
+    public function buildTree( int $parentID = null ): array
+    {
+        
+        $subcategories = [];
+        
+        foreach( $this->categories as $cat ) {
+            
+            if( (int) $cat['parent_id'] === $parentID ) {
+                
+                $children = $this->buildTree( $cat['id'] );
+                
+                if( $children ) {
+                    
+                    $cat['children'] = $children;
+                    
+                }
+                
+                $subcategories[] = $cat;
+                
+            }
+            
+        }
+        
+        return $subcategories;
+    
+    }
+    
     private function getCategories()
     {
         
