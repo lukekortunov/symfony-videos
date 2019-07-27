@@ -5,6 +5,8 @@ namespace App\Utils\AbstractClasses;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
+use Doctrine\DBAL\DBALException;
+
 abstract class AbstractCategoryTree
 {
     
@@ -18,6 +20,14 @@ abstract class AbstractCategoryTree
     
     public $categoriesList;
     
+    /**
+     * AbstractCategoryTree constructor.
+     *
+     * @param EntityManagerInterface $manager
+     * @param UrlGeneratorInterface $generator
+     *
+     * @throws DBALException
+     */
     public function __construct(EntityManagerInterface $manager, UrlGeneratorInterface $generator)
     {
     
@@ -29,16 +39,28 @@ abstract class AbstractCategoryTree
     
     }
     
+    
+    /**
+     * @param array $categories
+     *
+     * @return mixed
+     */
     abstract public function getCategoryList( array $categories );
     
+    
+    /**
+     * @param int|null $parentID
+     *
+     * @return array
+     */
     public function buildTree( int $parentID = null ): array
     {
         
         $subcategories = [];
         
         foreach( $this->categories as $cat ) {
-            
-            if( (int) $cat['parent_id'] === $parentID ) {
+    
+            if( (int) $cat['parent_id'] === (int) $parentID ) {
                 
                 $children = $this->buildTree( $cat['id'] );
                 
@@ -58,6 +80,11 @@ abstract class AbstractCategoryTree
     
     }
     
+    
+    /**
+     * @return mixed[]
+     * @throws DBALException
+     */
     private function getCategories()
     {
         
