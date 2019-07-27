@@ -10,11 +10,13 @@ abstract class AbstractCategoryTree
     
     protected static $connection;
     
-    private $manager;
+    protected $manager;
     
-    private $generator;
+    protected $generator;
     
     public $categories;
+    
+    public $categoriesList;
     
     public function __construct(EntityManagerInterface $manager, UrlGeneratorInterface $generator)
     {

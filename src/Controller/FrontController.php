@@ -35,9 +35,9 @@ class FrontController extends AbstractController
         
         $subcategories = $categories->buildTree( $id );
         
-        dump( $subcategories );
-        
-        return $this->render('front/videolist.html.twig');
+        return $this->render('front/videolist.html.twig', [
+            'subcategories' => $categories->getCategoryList($subcategories)
+        ]);
         
     }
     

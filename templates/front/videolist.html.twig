@@ -12,28 +12,17 @@
                 <h1 class="jumbotron-heading">Category - Funny</h1>
                 <div class="btn-group">
                     <div class="dropdown ml-2">
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Subcategories
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <ul class="mr-5">
-                                <li><a href="#">Funny</a></li>
-                                <ul>
-                                    <li><a href="#">Surprising</a></li>
-                                    <li><a href="#">Exciting</a></li>
-                                    <ul>
-                                        <li><a href="#">Strange</a></li>
-                                        <li><a href="#">Relaxing</a></li>
-                                    </ul>
-                                </ul>
-                            </ul>
+                            {{ subcategories|raw }}
                         </div>
                     </div>
 
                     <div class="form-row align-items-center ml-3">
                         <form action="#" method="POST">
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" onchange='this.form.submit();'>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" onchange='this.form.submit();' aria-label="Sort by">
                                 <option selected>Sort...</option>
                                 <option value="1">Highest rated</option>
                                 <option value="2">Title A-Z</option>
