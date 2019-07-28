@@ -6,11 +6,11 @@
     <h2>Editing category</h2>
 
     <form action="#" method="POST">
-        <input type="text" class="form-control is-invalid" id="validationServer01" placeholder="Category name" value="Funny" required aria-label="Category name">
+        <input type="text" class="form-control is-invalid" id="validationServer01" placeholder="Category name" value="{{ category.name }}" required aria-label="Category name">
         <br>
         <label for="inlineFormCustomSelect">Parent:</label>
         <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-            {{ render(controller('App\\Controller\\AdminController::getAllCategories')) }}
+            {{ render(controller('App\\Controller\\AdminController::getAllCategories', {'editedCategory':category})) }}
         </select>
         <div class="invalid-feedback">
             Category already exists!
