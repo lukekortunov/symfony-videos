@@ -1,0 +1,5 @@
+<option value="0" selected>No parent</option>
+
+{% for category in categories.categoriesList %}
+    <option value="{{ category.id }}">{{ category.name }}</option>
+{% endfor %}

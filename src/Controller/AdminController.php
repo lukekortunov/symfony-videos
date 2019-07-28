@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Category;
 use App\Utils\CategoryTreeAdminList;
+use App\Utils\CategoryTreeAdminOptionsList;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -46,10 +47,18 @@ class AdminController extends AbstractController
     
     /**
      * @Route("/edit-category", name="admin_category_edit")
+     *
+     * @param CategoryTreeAdminOptionsList $categories
+     *
+     * @return Response
      */
-    public function editCategory()
+    public function editCategory(CategoryTreeAdminOptionsList $categories)
     {
-        return $this->render( 'admin/edit_category.html.twig' );
+        
+        return $this->render( 'admin/edit_category.html.twig', [
+            'categories' => $categories
+        ] );
+        
     }
     
     
@@ -104,4 +113,23 @@ class AdminController extends AbstractController
         return $this->render('admin/users.html.twig' );
     }
     
+    
+    /**
+     * Render list of categories wrapped in <option>...</option> for forms usage
+     *
+     * @param CategoryTreeAdminOptionsList $categories
+     *
+     * @return Response
+     */
+    public function getAllCategories(CategoryTreeAdminOptionsList $categories)
+    {
+        
+        $categories->getCategoryList( $categories->buildTree() );
+        
+        return $this->render('admin/_all_categories.html.twig', [
+            'categories' => $categories
+        ]);
+
+    }
+
 }
