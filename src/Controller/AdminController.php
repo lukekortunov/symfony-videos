@@ -6,6 +6,7 @@ use App\Entity\Category;
 use App\Form\CategoryType;
 use App\Utils\CategoryTreeAdminList;
 use App\Utils\CategoryTreeAdminOptionsList;
+use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -43,31 +44,14 @@ class AdminController extends AbstractController
     
         $category = new Category;
         $form = $this->createForm(CategoryType::class, $category);
-        $form->handleRequest($request);
         
         $is_invalid = null;
         
-        if( $form->isSubmitted() && $form->isValid() ) {
-    
-            $repository = $this->getDoctrine()->getRepository(Category::class);
-    
-            $parent = $repository->find($request->get('category')['parent']);
-            
-            $category->setName( $request->get('category')['name'] );
-            $category->setParent($parent);
-            
-            $manager = $this->getDoctrine()->getManager();
-            $manager->persist( $category );
-            $manager->flush();
-            
-            return $this->redirectToRoute('admin_categories');
-            
+        if( $this->saveCategory( $category, $form, $request ) ) {
+            return $this->redirectToRoute('admin_categories' );
         } elseif( $request->isMethod('post') ) {
-            
             $is_invalid = ' is-invalid';
-            
         }
-        
 
         return $this->render('admin/categories.html.twig', [
             'categories' => $cats,
@@ -79,17 +63,29 @@ class AdminController extends AbstractController
     
     
     /**
-     * @Route("/edit-category/{id}", name="admin_category_edit")
+     * @Route("/edit-category/{id}", name="admin_category_edit", methods={"POST", "GET"})
      *
      * @param Category $category
+     * @param Request  $request
      *
      * @return Response
      */
-    public function editCategory( Category $category )
+    public function editCategory( Category $category, Request $request )
     {
         
+        $form = $this->createForm(CategoryType::class, $category);
+        $is_invalid = null;
+        
+        if( $this->saveCategory( $category, $form, $request ) ) {
+            return $this->redirectToRoute('admin_categories');
+        } elseif ($request->isMethod('post')) {
+            $is_invalid = ' is-invalid';
+        }
+        
         return $this->render( 'admin/edit_category.html.twig', [
-            'category' => $category
+            'category'   => $category,
+            'form'       => $form->createView(),
+            'is_invalid' => $is_invalid
         ] );
         
     }
@@ -165,6 +161,41 @@ class AdminController extends AbstractController
             'editedCategory' => $editedCategory
         ]);
 
+    }
+    
+    
+    /**
+     * Save category data to database
+     *
+     * @param Category $category
+     * @param FormInterface $form
+     * @param Request $request
+     *
+     * @return bool
+     */
+    private function saveCategory(Category $category, FormInterface $form, Request $request)
+    {
+    
+        $form->handleRequest($request);
+        
+        if( $form->isSubmitted() && $form->isValid() ) {
+            
+            $repository = $this->getDoctrine()->getRepository(Category::class);
+            $parent = $repository->find($request->request->get('category')['parent']);
+            
+            $category->setName( $request->request->get('category')['name'] );
+            $category->setParent( $parent );
+            
+            $manager = $this->getDoctrine()->getManager();
+            $manager->persist( $category );
+            $manager->flush();
+    
+            return true;
+            
+        }
+    
+        return false;
+        
     }
 
 }
