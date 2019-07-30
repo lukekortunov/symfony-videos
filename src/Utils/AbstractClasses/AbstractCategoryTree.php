@@ -14,7 +14,7 @@ abstract class AbstractCategoryTree
     
     protected $manager;
     
-    protected $generator;
+    public $generator;
     
     public $categories;
     
