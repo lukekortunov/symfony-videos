@@ -10,6 +10,10 @@ class CategoryTest extends KernelTestCase
     
     protected $mockedCategoryTreeFrontPage;
     
+    protected $mockedCategoryTreeAdminList;
+    
+    protected $mockedCategoryTreeAdminOptionsList;
+    
     protected function setUp()
     {
         
@@ -17,11 +21,25 @@ class CategoryTest extends KernelTestCase
         
         $generator = $kernel->getContainer()->get('router');
         
-        $this->mockedCategoryTreeFrontPage = $this->getMockBuilder('App\Utils\CategoryTreeFrontPage')
-                                                  ->disableOriginalConstructor()
-                                                  ->setMethods()
-                                                  ->getMock();
-        $this->mockedCategoryTreeFrontPage->generator = $generator;
+        $testedClasses = [
+            'CategoryTreeAdminList',
+            'CategoryTreeAdminOptionsList',
+            'CategoryTreeFrontPage',
+        ];
+        
+        foreach( $testedClasses as $testedClass ) {
+    
+            $name = 'mocked' . $testedClass;
+            
+            
+            $this->{$name} = $this->getMockBuilder('App\Utils\\'.$testedClass)
+                                                      ->disableOriginalConstructor()
+                                                      ->setMethods()
+                                                      ->getMock();
+    
+            $this->{$name}->generator = $generator;
+            
+        }
         
     }
     

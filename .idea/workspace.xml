@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa1a7751-eb17-4d4e-a4ca-be932ba949c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/AbstractClasses/AbstractCategoryTree.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/AbstractClasses/AbstractCategoryTree.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Utils/CategoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Utils/CategoryTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -309,6 +308,7 @@
     <MESSAGE value="Lesson #139" />
     <MESSAGE value="Lesson #140 - Start unit tests section" />
     <MESSAGE value="* add web-server-bundle" />
-    <option name="LAST_COMMIT_MESSAGE" value="* add web-server-bundle" />
+    <MESSAGE value="Lesson #141" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson #141" />
   </component>
 </project>
