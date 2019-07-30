@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa1a7751-eb17-4d4e-a4ca-be932ba949c3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony-cinema.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony-cinema.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20190727151855.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Controllers/AdminControllerCategoriesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controllers/AdminControllerCategoriesTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -294,7 +291,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lesson #116" />
     <MESSAGE value="Lesson #117" />
     <MESSAGE value="Lesson #118" />
     <MESSAGE value="Lesson #119" />
@@ -319,6 +315,7 @@
     <MESSAGE value="Lesson #141" />
     <MESSAGE value="Lesson #142" />
     <MESSAGE value="Lesson #145" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson #145" />
+    <MESSAGE value="Lesson #146" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson #146" />
   </component>
 </project>
