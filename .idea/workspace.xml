@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa1a7751-eb17-4d4e-a4ca-be932ba949c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/VideoFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190730134109.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20190727151855.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Controllers/AdminControllerCategoriesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controllers/AdminControllerCategoriesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20190730123048.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -291,7 +293,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lesson #117" />
     <MESSAGE value="Lesson #118" />
     <MESSAGE value="Lesson #119" />
     <MESSAGE value="Lesson #120" />
@@ -316,6 +317,7 @@
     <MESSAGE value="Lesson #142" />
     <MESSAGE value="Lesson #145" />
     <MESSAGE value="Lesson #146" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson #146" />
+    <MESSAGE value="Lesson #148" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson #148" />
   </component>
 </project>
