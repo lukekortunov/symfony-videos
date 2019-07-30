@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa1a7751-eb17-4d4e-a4ca-be932ba949c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/VideoFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190730134109.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front/includes/_videos.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20190730123048.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FrontController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front/videolist.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/videolist.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -293,7 +292,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lesson #118" />
     <MESSAGE value="Lesson #119" />
     <MESSAGE value="Lesson #120" />
     <MESSAGE value="Lesson #121" />
@@ -318,6 +316,7 @@
     <MESSAGE value="Lesson #145" />
     <MESSAGE value="Lesson #146" />
     <MESSAGE value="Lesson #148" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson #148" />
+    <MESSAGE value="Lesson #149" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson #149" />
   </component>
 </project>
