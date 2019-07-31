@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\Video;
+use Knp\Component\Pager\PaginatorInterface;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 
@@ -14,9 +15,30 @@ use Symfony\Bridge\Doctrine\RegistryInterface;
  */
 class VideoRepository extends ServiceEntityRepository
 {
-    public function __construct(RegistryInterface $registry)
+    
+    /** @var PaginatorInterface */
+    public $paginator;
+    
+    
+    public function __construct(RegistryInterface $registry, PaginatorInterface $paginator)
     {
+        
         parent::__construct($registry, Video::class);
+        
+        $this->paginator = $paginator;
+        
+    }
+    
+    
+    public function findAllPaginated( $page )
+    {
+    
+        $query = $this->createQueryBuilder('v')->getQuery();
+        
+        $pagination = $this->paginator->paginate($query, $page, 5);
+        
+        return $pagination;
+    
     }
 
     // /**
